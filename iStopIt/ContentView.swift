@@ -7,10 +7,30 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    @State private var date = Date()
+    @State private var today = Date().formatted(.dateTime.day().month().year())
+    
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            Text("When did you stop it?")
+                .font(.title2)
+                .fontWeight(.light)
+            DatePicker(
+                "Date",
+                selection: $date,
+                displayedComponents: [.date]
+            )
+            .datePickerStyle(.graphical)
             .padding()
+            
+            Text("You stoped on: \(date.formatted(.dateTime.day().month().year()))")
+            
+            Text("Today is: \(today)")
+        }
+        
     }
 }
 
