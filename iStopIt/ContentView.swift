@@ -10,8 +10,26 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @State private var date = Date()
-    @State private var today = Date().formatted(.dateTime.day().month().year())
+    @State private var stopedDate = Date()
+    @State private var today = Date()
+    
+    func numberOfDaysBetweenDates(from fromDate: Date, to toDate: Date) -> Date  {
+         let delta = toDate.timeIntervalSince(fromDate)
+         let today = Date()
+         if delta < 0 {
+             print(today)
+             return today
+         } else {
+             print(today.addingTimeInterval(delta))
+             return today.addingTimeInterval(delta)
+         }
+    }
+    
+    func typeCheck() {
+        print(type(of: today))
+    }
+    
+    
     
     var body: some View {
         VStack {
@@ -20,15 +38,19 @@ struct ContentView: View {
                 .fontWeight(.light)
             DatePicker(
                 "Date",
-                selection: $date,
+                selection: $stopedDate,
                 displayedComponents: [.date]
             )
             .datePickerStyle(.graphical)
             .padding()
             
-            Text("You stoped on: \(date.formatted(.dateTime.day().month().year()))")
+            Text("You stoped on: \(stopedDate.formatted(.dateTime.day().month().year()))")
             
-            Text("Today is: \(today)")
+            Text("Today is: \(today.formatted(.dateTime.day().month().year()))")
+            
+            Button(action: {numberOfDaysBetweenDates(from: stopedDate, to: today)}) {
+                Text("ADD")
+            }
         }
         
     }
