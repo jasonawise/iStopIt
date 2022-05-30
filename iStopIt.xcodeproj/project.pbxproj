@@ -11,6 +11,7 @@
 		2C5A3ECC28404CB200F7FBB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A3ECB28404CB200F7FBB4 /* ContentView.swift */; };
 		2C5A3ECE28404CB400F7FBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5A3ECD28404CB400F7FBB4 /* Assets.xcassets */; };
 		2C5A3ED128404CB400F7FBB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5A3ED028404CB400F7FBB4 /* Preview Assets.xcassets */; };
+		2CE1457B2845829D00256981 /* AddQuiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1457A2845829D00256981 /* AddQuiterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2C5A3ECB28404CB200F7FBB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C5A3ECD28404CB400F7FBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5A3ED028404CB400F7FBB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CE1457A2845829D00256981 /* AddQuiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuiterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		2C5A3EC828404CB200F7FBB4 /* iStopIt */ = {
 			isa = PBXGroup;
 			children = (
+				2CE1457A2845829D00256981 /* AddQuiterView.swift */,
 				2C5A3EC928404CB200F7FBB4 /* iStopItApp.swift */,
 				2C5A3ECB28404CB200F7FBB4 /* ContentView.swift */,
 				2C5A3ECD28404CB400F7FBB4 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE1457B2845829D00256981 /* AddQuiterView.swift in Sources */,
 				2C5A3ECC28404CB200F7FBB4 /* ContentView.swift in Sources */,
 				2C5A3ECA28404CB200F7FBB4 /* iStopItApp.swift in Sources */,
 			);
